@@ -1,7 +1,7 @@
   puts "Creating exercises"
 
 puts "."
-  Exerise.create(
+  Exercise.create(
   name: "Squats sautés",
   exercise_type: "Cardio",
   equipment: "Aucun"
