@@ -1,8 +1,13 @@
+<div class="container">
+  <%= link_to "Revenir à l'accueil et générer un tabata", '/', {class: "btn btn-primary"} %>
+</div>
+
 <div class="text-center">
   <h1>Liste des exercices proposés (<%= @exercises.count%>)  </h1>
 </div>
 
 <div class="container">
+
   <div class="row">
     <div class="text-center">
       <h2>Cardio</h2>
@@ -28,7 +33,7 @@
 
   <div class="row">
     <div class="text-center">
-      <h2>Dos</h2>
+      <h2>Pecs</h2>
     </div>
     <% @exercises.select{|exo| exo[:exercise_type] == 'Pecs'}.each do |exercise|  %>
     <div class="col-xs-12 col-sm-6 col-md-3">
@@ -49,24 +54,11 @@
   <% end %>
   </div>
 
-
   <div class="row">
     <div class="text-center">
-      <h2>Epaules</h2>
+      <h2>Epaules / Tris</h2>
     </div>
-    <% @exercises.select{|exo| exo[:exercise_type] == 'Epaules'}.each do |exercise|  %>
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      <%= render 'exercise_card', exercise: exercise %>
-    </div>
-  <% end %>
-  </div>
-
-
-  <div class="row">
-    <div class="text-center">
-      <h2>Pecs/abdos</h2>
-    </div>
-    <% @exercises.select{|exo| exo[:exercise_type] == 'Pecs/abdos'}.each do |exercise|  %>
+      <% (@exercises.select{|exo| exo[:exercise_type] == 'Epaules'} + @exercises.select{|exo| exo[:exercise_type] == 'Tris'} + @exercises.select{|exo| exo[:exercise_type] == 'Pecs/abdos'}).each do |exercise| %>
     <div class="col-xs-12 col-sm-6 col-md-3">
       <%= render 'exercise_card', exercise: exercise %>
     </div>
@@ -75,4 +67,4 @@
 
 </div>
 
-<%= link_to "Créer un nouvel exercice", new_exercise_path, {class: "btn btn-primary"} %>
+<%#= link_to "Créer un nouvel exercice", new_exercise_path, {class: "btn btn-primary"} %>
