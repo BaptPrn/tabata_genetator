@@ -147,10 +147,12 @@ puts "."
   equipment: "TRX"
  )
 
- Exercise.new(
-  ,
+puts "."
+ Exercise.create(
+  name: "Pompes spider-man",
   exercise_type: "Pecs",
-  equipment: "Aucun",  )
+  equipment: "Aucun"
+)
 
 puts "."
  Exercise.create(
