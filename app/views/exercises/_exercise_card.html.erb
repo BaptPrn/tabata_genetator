@@ -1,0 +1,11 @@
+<div class="card">
+  <div class="text-center">
+    <h3><%= exercise.name %></h3>
+  </div>
+  <ul>
+    <li><strong> Equipement:</strong> <%= exercise.equipment %></li>
+    <div class="text-center">
+      <%= link_to "Voir l'exercice", exercise_path(exercise), {class: "btn btn-primary"} %>
+    </div>
+  </ul>
+</div>

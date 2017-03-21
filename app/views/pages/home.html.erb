@@ -1,2 +1,22 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="text-center">
+<h1>La tabateur</h1>
+<!-- <h3>Votre nouveau meilleur ami</h3> -->
+</div>
+
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+    <h2>Sélectionnez votre équipement</h2>
+    <%= simple_form_for :query, url: '/workout', method: :get do |f| %>
+    <%= f.input :trx, as: :boolean, label: "TRX"  %>
+    <%= f.input :weights, as: :boolean, label: "Haltères"  %>
+    <%= f.input :pull_up_bar, as: :boolean, label: "Barre de tractions"  %>
+    <%= f.input :abs_wheel, as: :boolean, label: "Roue à abdos"  %>
+    <%= f.input :jumping_rope, as: :boolean, label: "Corde à sauter"  %>
+    <%= f.input :chair, as: :boolean, label: "Chaise ou banc"  %>
+    <%= f.submit "Génerer une HIIT session", {class: "btn btn-primary"} %>
+  <% end %>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+    <%= link_to "Découvrir la liste des exercices", exercises_path, {class: "btn btn-default"} %>
+  </div>
+</div>

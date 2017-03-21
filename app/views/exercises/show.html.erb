@@ -1,0 +1,23 @@
+<div class="text-center">
+   <h1><%= @exercise.name %></h1>
+</div>
+
+<div class="container">
+  <h3><strong>Type d'exercice:</strong> <%= @exercise.exercise_type %></h4>
+  <h3><strong> Equipement recquis:</strong> <%= @exercise.equipment %></h4>
+
+  <%#= link_to "Créer un nouvel exercice", new_exercise_path, {class: "btn btn-primary"} %>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <%= link_to "Modifier l'exercice", edit_exercise_path(@exercise), {class: "btn btn-primary"} %>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <%= link_to "Supprimer l'exercise", exercise_path(@exercise), {class: "btn btn-danger", method: :delete} %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <%= link_to "Revenir à la lsite des exercices", exercises_path, {class: "btn btn-default"} %>
+    </div>
+  </div>
+</div>
