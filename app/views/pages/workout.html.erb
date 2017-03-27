@@ -24,6 +24,13 @@
 <!-- Generation du tabatas haut -->
 <% @exos_pecs = @exercises.select{|exo| exo[:exercise_type] == 'Pecs'} %>
 <% @exos_dos = @exercises.select{|exo| exo[:exercise_type] == 'Dos'} %>
+<% if params[:query][:trx]== "1" %>
+<% @hidden_exos = @exercises.select{|exo| exo[:name] == 'Relevé de buste avec les coudes' || exo[:name] == 'Reverse snow angels' || exo[:name] == 'Superman' } %>
+<% @exos_dos -= @hidden_exos %>
+<% end %>
+<% @hidden_exos.each do |exo| %>
+<%= exo.name %>
+<% end %>
 <% @exos_autres = @exercises.select{|exo| exo[:exercise_type] == 'Epaules'} + @exercises.select{|exo| exo[:exercise_type] == 'Tris'} + @exercises.select{|exo| exo[:exercise_type] == 'Pecs/abdos'} %>
 <% @exo_pecs_1 = @exos_pecs.shuffle.first %>
 <% @exos_pecs -= [@exo_pecs_1] %>
