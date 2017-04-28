@@ -6,7 +6,7 @@ Exercise.create(
   equipment: "Aucun",
   initial_status: nil,
   available: nil,
-  description: "Allongé sur le dos, remonter le buste et les genoux jusqu'à une position accroupie. Enchainer de manière dynamique.">,
+  description: "Allongé sur le dos, remonter le buste et les genoux jusqu'à une position accroupie. Enchainer de manière dynamique."
  )
 
  puts "."
@@ -16,7 +16,7 @@ Exercise.create(
   equipment: "Aucun",
   initial_status: nil,
   available: nil,
-  description: "Position assise jambes tendues, croiser les jambes en alternant">,
+  description: "Position assise jambes tendues, croiser les jambes en alternant"
  )
 
  puts "."
@@ -27,7 +27,7 @@ Exercise.create(
   initial_status: nil,
   available: nil,
   description:
-   "Position assise avec mains au sol et jambes tendues, plier les jambes en remontant le buste puis les retendre les jambes en descendant le buste.">,
+   "Position assise avec mains au sol et jambes tendues, plier les jambes en remontant le buste puis les retendre les jambes en descendant le buste."
  )
 
  puts "."
@@ -37,7 +37,7 @@ Exercise.create(
   equipment: "Corde à sauter",
   initial_status: nil,
   available: nil,
-  description: "">,
+  description: ""
  )
 
  puts "."
@@ -47,7 +47,7 @@ Exercise.create(
   equipment: "Chaise/banc",
   initial_status: nil,
   available: nil,
-  description: "Mains sur une chaise, fesses dans le vide et jambes tendues, alterner bras pliés / bras tendus">,
+  description: "Mains sur une chaise, fesses dans le vide et jambes tendues, alterner bras pliés / bras tendus"
  )
 
  puts "."
@@ -57,7 +57,7 @@ Exercise.create(
   equipment: "Haltères",
   initial_status: nil,
   available: nil,
-  description: "Bras écartés, coudes à 90°, remonter les altères au dessus de la tête et enchainer">,
+  description: "Bras écartés, coudes à 90°, remonter les altères au dessus de la tête et enchainer"
  )
 
  puts "."
@@ -67,7 +67,7 @@ Exercise.create(
   equipment: "Haltères",
   initial_status: nil,
   available: nil,
-  description: "Debout bras tendus le long du corps, remonter une altère face à soi bras tendu puis alterner">,
+  description: "Debout bras tendus le long du corps, remonter une altère face à soi bras tendu puis alterner"
  )
 
  puts "."
@@ -77,7 +77,7 @@ Exercise.create(
   equipment: "Haltères",
   initial_status: nil,
   available: nil,
-  description: "Bras semi-fléchis le long du corps, ramener les bras à hauteur des épaules en gardant les coudes au dessus des altères">,
+  description: "Bras semi-fléchis le long du corps, ramener les bras à hauteur des épaules en gardant les coudes au dessus des altères"
  )
 
  puts "."
@@ -87,7 +87,7 @@ Exercise.create(
   equipment: "Aucun",
   initial_status: nil,
   available: nil,
-  description: "Enchainer les fentes jambe gauche/droite de manière dynamique">,
+  description: "Enchainer les fentes jambe gauche/droite de manière dynamique"
  )
 
  puts "."
@@ -98,7 +98,7 @@ Exercise.create(
   initial_status: nil,
   available: nil,
   description:
-   "1 pied sur le sol, l'autre sur une chaise, remonter le plus haut possible au dessus de la chaise en alternant la jambe de poussée.">,
+   "1 pied sur le sol, l'autre sur une chaise, remonter le plus haut possible au dessus de la chaise en alternant la jambe de poussée."
  )
 
  puts "."
@@ -108,7 +108,7 @@ Exercise.create(
   equipment: "Aucun",
   initial_status: nil,
   available: nil,
-  description: "Assis sur le sol, descendre le buste le plus bas possible sans décoller les pieds. Tenir la position.">,
+  description: "Assis sur le sol, descendre le buste le plus bas possible sans décoller les pieds. Tenir la position."
  )
 
  puts "."
@@ -118,7 +118,7 @@ Exercise.create(
   equipment: "Aucun",
   initial_status: nil,
   available: nil,
-  description: "Sur le dos, coudes au sol et jambes tendues, tenir la position en essayant de pousser le ventre le plus haut possible">,
+  description: "Sur le dos, coudes au sol et jambes tendues, tenir la position en essayant de pousser le ventre le plus haut possible"
  )
 
  puts "."
@@ -129,7 +129,7 @@ Exercise.create(
   initial_status: nil,
   available: nil,
   description:
-   "Position de départ bras tendus face à vous, remonter les bras serrés à la verticale (position I). Gérer la difficulté en avançant/reculant les pieds.">,
+   "Position de départ bras tendus face à vous, remonter les bras serrés à la verticale (position I). Gérer la difficulté en avançant/reculant les pieds."
  )
 
  puts "."
@@ -140,7 +140,7 @@ Exercise.create(
   initial_status: nil,
   available: nil,
   description:
-   "Jambes semi-fléchies, poitrine face au sol et altères sous la poitrine, écarter les bras jusqu'à les ramener parallèles au sol ">,
+   "Jambes semi-fléchies, poitrine face au sol et altères sous la poitrine, écarter les bras jusqu'à les ramener parallèles au sol "
  )
 
  puts "."
@@ -150,7 +150,7 @@ Exercise.create(
   equipment: "Aucun",
   initial_status: nil,
   available: nil,
-  description: "Sur place, remonter en même temps les 2 genoux. Enchainer le plus vite possible">,
+  description: "Sur place, remonter en même temps les 2 genoux. Enchainer le plus vite possible"
  )
 
  puts "."
@@ -160,7 +160,7 @@ Exercise.create(
   equipment: "Aucun",
   initial_status: nil,
   available: nil,
-  description: "Départ position gainage bras tendus. Ramener les pieds au niveau de la poitrine puis revenir en position de départ">,
+  description: "Départ position gainage bras tendus. Ramener les pieds au niveau de la poitrine puis revenir en position de départ"
  )
 
  puts "."
@@ -170,7 +170,7 @@ Exercise.create(
   equipment: "Aucun",
   initial_status: nil,
   available: nil,
-  description: "Sur place, monter les genoux le plus vite et le plus haut possible">,
+  description: "Sur place, monter les genoux le plus vite et le plus haut possible"
  )
 
  puts "."
@@ -180,7 +180,7 @@ Exercise.create(
   equipment: "Aucun",
   initial_status: nil,
   available: nil,
-  description: "Faire des montées de genoux avec les mains au sol">,
+  description: "Faire des montées de genoux avec les mains au sol"
  )
 
  puts "."
@@ -191,7 +191,7 @@ Exercise.create(
   initial_status: nil,
   available: nil,
   description:
-   "Position gainage bras tendus. Ramener le genoux au niveau du coude opposé puis revenir en position de départ et alterner">,
+   "Position gainage bras tendus. Ramener le genoux au niveau du coude opposé puis revenir en position de départ et alterner"
  )
 
  puts "."
@@ -201,7 +201,7 @@ Exercise.create(
   equipment: "Aucun",
   initial_status: nil,
   available: nil,
-  description: "Position gainage mains au sol, remonter jusqu'à avoir les 2 bras tendus puis redescendre et recommencer.">,
+  description: "Position gainage mains au sol, remonter jusqu'à avoir les 2 bras tendus puis redescendre et recommencer."
  )
 
  puts "."
@@ -211,7 +211,7 @@ Exercise.create(
   equipment: "TRX",
   initial_status: nil,
   available: nil,
-  description: "Pompes pieds au sol et mains dans le TRX">,
+  description: "Pompes pieds au sol et mains dans le TRX"
  )
 
  puts "."
@@ -221,7 +221,7 @@ Exercise.create(
   equipment: "Aucun",
   initial_status: nil,
   available: nil,
-  description: "Mains largeur d'épaules, descendre en gardant les coudes le long du corps">,
+  description: "Mains largeur d'épaules, descendre en gardant les coudes le long du corps"
  )
 
  puts "."
@@ -231,7 +231,7 @@ Exercise.create(
   equipment: "Chaise/banc",
   initial_status: nil,
   available: nil,
-  description: "Pompes avec pieds sur une chaise/banc">,
+  description: "Pompes avec pieds sur une chaise/banc"
  )
 
  puts "."
@@ -241,7 +241,7 @@ Exercise.create(
   equipment: "Aucun",
   initial_status: nil,
   available: nil,
-  description: "Genoux au sol, mains serrées sous la poitrine, creuser le dos avant de tendre les bras.">,
+  description: "Genoux au sol, mains serrées sous la poitrine, creuser le dos avant de tendre les bras."
  )
 
  puts "."
@@ -251,7 +251,7 @@ Exercise.create(
   equipment: "Aucun",
   initial_status: nil,
   available: nil,
-  description: "Mains à 1,5x la largeur des épaules, descendre avec les coudes légèrement orientés vers l'extérieur">,
+  description: "Mains à 1,5x la largeur des épaules, descendre avec les coudes légèrement orientés vers l'extérieur"
  )
 
  puts "."
@@ -261,7 +261,7 @@ Exercise.create(
   equipment: "Aucun",
   initial_status: nil,
   available: nil,
-  description: "Pompes. Ramener le genoux au niveau du coude à la descente">,
+  description: "Pompes. Ramener le genoux au niveau du coude à la descente"
  )
 
  puts "."
@@ -271,7 +271,7 @@ Exercise.create(
   equipment: "Aucun",
   initial_status: nil,
   available: nil,
-  description: "Pompes avec le corps en V inversé, fesses le plus haut possible">,
+  description: "Pompes avec le corps en V inversé, fesses le plus haut possible"
  )
 
  puts "."
@@ -282,7 +282,7 @@ Exercise.create(
   initial_status: nil,
   available: nil,
   description:
-   "Allongé sur le ventre,  buste relevé et bras tendus le long du corps. Ramener les bras au dessus de la tête en les gardant tendus et les mains le plus haut possible.">,
+   "Allongé sur le ventre,  buste relevé et bras tendus le long du corps. Ramener les bras au dessus de la tête en les gardant tendus et les mains le plus haut possible."
  )
 
  puts "."
@@ -293,7 +293,7 @@ Exercise.create(
   initial_status: nil,
   available: nil,
   description:
-   "Pieds au sol et bras tendus face à soi, ramener les mains au niveau des côtes en tirant sur les coudes. Gérer la difficulté en avançant/reculant les pieds.">,
+   "Pieds au sol et bras tendus face à soi, ramener les mains au niveau des côtes en tirant sur les coudes. Gérer la difficulté en avançant/reculant les pieds."
  )
 
  puts "."
@@ -303,7 +303,7 @@ Exercise.create(
   equipment: "Aucun",
   initial_status: nil,
   available: nil,
-  description: "Position assise, toucher le plus loin possible derrière soi de chaque coté (avec ou sans altère)">,
+  description: "Position assise, toucher le plus loin possible derrière soi de chaque coté (avec ou sans altère)"
  )
 
  puts "."
@@ -313,7 +313,7 @@ Exercise.create(
   equipment: "Rouleau",
   initial_status: nil,
   available: nil,
-  description: nil>,
+  description: nil
  )
 
  puts "."
@@ -324,7 +324,7 @@ Exercise.create(
   initial_status: nil,
   available: nil,
   description:
-   "Jambes légèrement fléchies, buste en avant, et bras tendus vers le sol, remonter les altères en tirant sur les coudes (les coudes restent le long du corps)">,
+   "Jambes légèrement fléchies, buste en avant, et bras tendus vers le sol, remonter les altères en tirant sur les coudes (les coudes restent le long du corps)"
  )
 
  puts "."
@@ -334,7 +334,7 @@ Exercise.create(
   equipment: "Haltères",
   initial_status: nil,
   available: nil,
-  description: "Position allongée jambes fléchies et haltère sur le ventre, remonter le buste avec l'haltère au dessus de soi">,
+  description: "Position allongée jambes fléchies et haltère sur le ventre, remonter le buste avec l'haltère au dessus de soi"
  )
 
  puts "."
@@ -344,7 +344,7 @@ Exercise.create(
   equipment: "Aucun",
   initial_status: nil,
   available: nil,
-  description: "Fléchir les jambes jusqu'à 90° et remonter en sautant">,
+  description: "Fléchir les jambes jusqu'à 90° et remonter en sautant"
  )
 
  puts "."
@@ -355,7 +355,7 @@ Exercise.create(
   initial_status: nil,
   available: nil,
   description:
-   "Position assise avec pieds au sol, descendre le buste le plus bas possible. Remonter l'haltère à la verticale puis la ramener à la poitrine en tenant la position">,
+   "Position assise avec pieds au sol, descendre le buste le plus bas possible. Remonter l'haltère à la verticale puis la ramener à la poitrine en tenant la position"
  )
 
  puts "."
@@ -365,7 +365,7 @@ Exercise.create(
   equipment: "Aucun",
   initial_status: nil,
   available: nil,
-  description: "Allongé sur le ventre, bras tendus à la verticale, lever le buste et les jambes puis revenir en position de départ">,
+  description: "Allongé sur le ventre, bras tendus à la verticale, lever le buste et les jambes puis revenir en position de départ"
  )
 
  puts "."
@@ -375,7 +375,7 @@ Exercise.create(
   equipment: "TRX",
   initial_status: nil,
   available: nil,
-  description: "Position de départ bras tendus face à vous. Ecarter les bras jusqu'à former un T puis revenir en position de départ">,
+  description: "Position de départ bras tendus face à vous. Ecarter les bras jusqu'à former un T puis revenir en position de départ"
  )
 
  puts "."
@@ -385,7 +385,7 @@ Exercise.create(
   equipment: "Haltères",
   initial_status: nil,
   available: nil,
-  description: "Bras tendus le long du corps avec une haltère, remonter l'haltère au menton en gardant les coudes le plus haut possible">,
+  description: "Bras tendus le long du corps avec une haltère, remonter l'haltère au menton en gardant les coudes le plus haut possible"
  )
 
  puts "."
@@ -395,7 +395,7 @@ Exercise.create(
   equipment: "Aucun",
   initial_status: nil,
   available: nil,
-  description: "Allongé sur le sol, jambes tendues à 90°, toucher les pieds/chevilles avec les mains">,
+  description: "Allongé sur le sol, jambes tendues à 90°, toucher les pieds/chevilles avec les mains"
  )
 
  puts "."
@@ -405,7 +405,7 @@ Exercise.create(
   equipment: "Barre de tractions",
   initial_status: nil,
   available: nil,
-  description: "Tractions mains écartées, paumes de mains vers l'avant (pouces à l'intérieur)">,
+  description: "Tractions mains écartées, paumes de mains vers l'avant (pouces à l'intérieur)"
  )
 
  puts "."
@@ -415,7 +415,7 @@ Exercise.create(
   equipment: "Barre de tractions",
   initial_status: nil,
   available: nil,
-  description: "Tractions mains largeur d'épaules, paumes face à vous (pouces vers l'extérieur)">,
+  description: "Tractions mains largeur d'épaules, paumes face à vous (pouces vers l'extérieur)"
  )
 
  puts "."
@@ -426,7 +426,7 @@ Exercise.create(
   initial_status: nil,
   available: nil,
   description:
-   "1 tiers de pompes mains serrées, puis 1 tiers de pompes mains largeur d'épaules, puis 1 tiers de pompes mains écartées. Essayer de faire le même nombre de répétitions à chaque exercice.">,
+   "1 tiers de pompes mains serrées, puis 1 tiers de pompes mains largeur d'épaules, puis 1 tiers de pompes mains écartées. Essayer de faire le même nombre de répétitions à chaque exercice."
  )
 
  puts "."
@@ -436,7 +436,7 @@ Exercise.create(
   equipment: "Aucun",
   initial_status: nil,
   available: nil,
-  description: "Allongé, une jambe pliée l'autre tendue, toucher le genou plié avec le coude opposé puis alterner.">,
+  description: "Allongé, une jambe pliée l'autre tendue, toucher le genou plié avec le coude opposé puis alterner."
  )
 
  puts "."
