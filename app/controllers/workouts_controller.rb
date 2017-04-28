@@ -33,7 +33,7 @@ end
 def filter_equipment(exos)
   exos -= Exercise.where('equipment = ?', 'TRX') if params[:query][:trx]== "0"
   exos -= Exercise.where('equipment = ?', 'Haltères') if params[:query][:weights]== "0"
-  exos -= Exercise.where('name = ?', 'Reverse snow angels') if params[:query][:weights]== "0" || params[:query][:trx]== "0"
+  exos -= Exercise.where('name = ?', 'Reverse snow angels') if params[:query][:weights]== "1" || params[:query][:trx]== "1"
   exos -= Exercise.where('equipment = ?', 'Barre de tractions') if params[:query][:pull_up_bar]== "0"
   exos -= Exercise.where('equipment = ?', 'Rouleau') if params[:query][:abs_wheel]== "0"
   exos -= Exercise.where('equipment = ?', 'Chaise/banc') if params[:query][:chair]== "0"
