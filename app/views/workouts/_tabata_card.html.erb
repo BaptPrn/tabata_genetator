@@ -1,0 +1,32 @@
+<div class="text-left">
+  <h4>3 tours de:</h4>
+  <ul>
+    <% exercises.each do |exo| %>
+  <div class='<%= exo.name%>'>
+      <li>20 sec <%= exo.name %> </li>
+      10 sec de repos
+      <div class='hidden', id="<%= exo.name%>">
+        <li>
+          <h5><strong>Description:</strong></h5>
+          <p><%= exo.description %></p>
+        </li>
+      </div>
+    <% end %>
+  </div>
+  </ul>
+</div>
+
+
+<% content_for(:after_js) do %>
+  <%= javascript_tag do %>
+    $(document).ready(function(){
+      $('.exo.name').on('click', function(event) {
+         $('#exo.name').removeClass('hidden');
+            <!-- $(this).next("#description").removeClass('hidden'); -->
+            <!-- $(this).next('').hide() --><!-- removeClass('hidden'); -->
+      });
+    });
+  <% end %>
+<% end %>
+
+

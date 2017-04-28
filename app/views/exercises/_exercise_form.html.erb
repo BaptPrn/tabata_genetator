@@ -4,6 +4,7 @@
     <%= f.input :name, label: "Nom de l'exercice" %>
     <%= f.input :exercise_type, collection: types_collection, label: "Type d'exercice"%>
     <%= f.input :equipment, collection: equipments_collection, label: "Equipement recquis"%>
+    <%= f.input :description, label: "Description"%>
     <%= f.submit %>
   <% end %>
   </div>

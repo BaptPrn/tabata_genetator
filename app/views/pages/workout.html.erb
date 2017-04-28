@@ -7,6 +7,7 @@
 <% @exercises -= Exercise.all.where('equipment = ?', 'Corde à sauter') if params[:query][:jumping_rope]== "0" %>
 <%# @exercises = @exercises.shuffle %>
 
+
 <%#= @exercises.find(name: 'Squats sautés') %>
 <div class="container text-center">
   <h1>Ton tabata du jour:</h1>
@@ -46,7 +47,9 @@
 
 
 <!-- Generation du tabata abdos -->
-<% @abdos_exos = @exercises.select{|exo| exo[:exercise_type] == 'Abdos'}%>
+<%# @abdos_exos = @exercises.select{|exo| exo[:exercise_type] == 'Abdos'}%>
+
+
 <% @gainage_abdos = @exercises.select{|exo| exo[:name] == 'Gainage abdos sur le dos'} %>
 <% @tabata_abdos = [@gainage_abdos[0]] %>
 <% 2.times do %>

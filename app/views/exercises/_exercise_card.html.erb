@@ -1,11 +1,9 @@
 <div class="card">
   <h3><%= exercise.name %></h3>
-  <% if exercise.equipment != "Aucun" %>
   <h4><strong>Equipement:  </strong><%= exercise.equipment %></h4>
-  <% end %>
-    <!-- <li><strong> Equipement:</strong> <%= exercise.equipment %></li> -->
-   <!--  <div class="text-center">
-      <%#= link_to "Voir l'exercice", exercise_path(exercise), {class: "btn btn-primary"} %>
-    </div> -->
-  </ul>
+  <h5><strong>Description:  </strong><%= exercise.description %></h5>
+
+   <div class="text-center">
+      <%= link_to "Voir l'exercice", exercise_path(exercise), {class: "btn btn-primary"} %>
+    </div>
 </div>
