@@ -2,6 +2,7 @@ class WorkoutsController < ApplicationController
   skip_before_action :authenticate_user!
 
   def show
+    # @exercises = Exercise.all
     @cardio_exercises = exos_generator('Cardio')
     @abdos_exercises = exos_generator('Abdos')
     @pecs_exercises = exos_generator('Pecs')
@@ -38,6 +39,7 @@ def filter_equipment(exos)
   exos -= Exercise.where('equipment = ?', 'Rouleau') if params[:query][:abs_wheel]== "0"
   exos -= Exercise.where('equipment = ?', 'Chaise/banc') if params[:query][:chair]== "0"
   exos -= Exercise.where('equipment = ?', 'Corde à sauter') if params[:query][:jumping_rope]== "0"
+  exos
 end
 
 def tabata_generator(exercises_array, fixed_exercise_name)

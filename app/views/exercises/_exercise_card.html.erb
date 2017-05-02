@@ -2,8 +2,9 @@
   <h3><%= exercise.name %></h3>
   <h4><strong>Equipement:  </strong><%= exercise.equipment %></h4>
   <h5><strong>Description:  </strong><%= exercise.description %></h5>
+  <h5><strong>Type d'exo:  </strong><%= exercise.exercise_type %></h5>
 
-<!--    <div class="text-center">
-      <%#= link_to "Voir l'exercice", exercise_path(exercise), {class: "btn btn-primary"} %> -->
+<div class="text-center">
+      <%= link_to "Voir l'exercice", exercise_path(exercise), {class: "btn btn-primary"} %>
     </div>
 </div>

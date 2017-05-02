@@ -1,12 +1,12 @@
 <div class="container">
   <div class="text-center">
-  <h1>Bonjour Stephane, bienvenue sur le tabateur</h1>
-  <!-- <h3>Votre nouveau meilleur ami</h3> -->
+  <h1>Salut mon titi, bienvenue sur le tabateur</h1>
   </div>
+
 
   <div class="row">
     <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-      <h2>Sélectionnez votre équipement</h2>
+      <h3>Dis moi ce que tu as, je m'occupe du reste</h3>
       <%= simple_form_for :query, url: '/workout', method: :get do |f| %>
       <%= f.input :trx, as: :boolean, label: "TRX"  %>
       <%= f.input :weights, as: :boolean, label: "Haltères"  %>

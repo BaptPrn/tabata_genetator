@@ -1,30 +1,24 @@
 <div class="text-left">
   <h4>3 tours de:</h4>
-  <ul>
-    <% exercises.each do |exo| %>
-      <li>20 sec <%= exo.name %> </li>
-      10 sec de repos
-      <div class='hidden'>
-        <li>
-          <h5><strong>Description:</strong></h5>
-          <p><%= exo.description %></p>
-        </li>
+  <% exercises.each do |exo| %>
+    <div class="exercise-name">
+      <p>20 sec <%= exo.name %></p>
+      <div class="exercise-description hidden">
+        <p><%= exo.description %></p>
       </div>
-    <% end %>
-  </ul>
+    </div>
+    <div>
+      <h5>10 sec de repos</h5>
+    </div>
+  <% end %>
 </div>
 
-
-<% content_for(:after_js) do %>
+ <% content_for(:after_js) do %>
   <%= javascript_tag do %>
     $(document).ready(function(){
-      $('.exo').on('click', function(event) {
-         $('#description').removeClass('hidden');
-            <!-- $(this).next("#description").removeClass('hidden'); -->
-            <!-- $(this).next('').hide() --><!-- removeClass('hidden'); -->
+      $('.exercise-name').on('click', function(){
+        $(this).children('.exercise-description').first().removeClass('hidden');
       });
     });
   <% end %>
 <% end %>
-
-
