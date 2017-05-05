@@ -1,0 +1,23 @@
+<div class="text-left">
+  <h4>3 tours de:</h4>
+  <% exercises.each do |exo| %>
+    <div class="exercise-name">
+      <p>20 sec <%= exo.name %></p>
+      <p class="exercise-description hidden"><%= exo.description %></p>
+    </div>
+    <div>
+      <h5>10 sec de repos</h5>
+    </div>
+  <% end %>
+</div>
+
+ <% content_for(:after_js) do %>
+  <%= javascript_tag do %>
+    $(document).ready(function(){
+      $('.exercise-name').on('click', function(){
+        console.log("click")
+        $(this).children('.exercise-description').toggleClass('hidden');
+      });
+    });
+  <% end %>
+<% end %>
