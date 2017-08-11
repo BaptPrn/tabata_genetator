@@ -1,35 +1,12 @@
-<!-- <div class="container-small text-center">
+<div class="container-small text-center">
   <h1>Ton tabata du jour:</h1>
 
   <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      <h2>Partie 1 - Cardio</h2>
-      <%#= render 'tabata_card', exercises: @tabata_cardio %>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      <h2>Partie 2 - Force</h2>
-      <%#= render 'tabata_card', exercises: @tabata_force1 %>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      <h2>Partie 3 - Abdos</h2>
-      <%#= render 'tabata_card', exercises: @tabata_abdos %>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      <h2>Partie 4 - Force</h2>
-      <%#= render 'tabata_card', exercises: @tabata_force2 %>
-    </div>
+    <% @tabata.each_with_index do |tabata, index| %>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <h2>Partie <%= index + 1 %> - <%= tabata[0].exercise_type %></h2>
+        <%= render 'tabata_card', exercises: tabata %>
+      </div>
+    <% end %>
   </div>
-</div> -->
-
-<%= @tabatas %>
-
-<!--
-
-var end_time = $('hidden-field').text();
-<span id='hidden-field'><%#= time %></span>
-<script type='text/javascript'>var end_time = <%#= time %> ;</script>
-var time_left = Math.abs(new Date(end_time) - new Date());
- -->
+</div>

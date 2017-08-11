@@ -3,22 +3,34 @@
   <h1>Salut mon titi, bienvenue sur le tabateur</h1>
   </div>
 
+  <%= simple_form_for :query, url: '/workout', method: :get do |f| %>
 
-  <div class="row">
-    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-      <h3>Dis moi ce que tu as, je m'occupe du reste</h3>
-      <%= simple_form_for :query, url: '/workout', method: :get do |f| %>
-      <%= f.input :trx, as: :boolean, label: "TRX"  %>
-      <%= f.input :weights, as: :boolean, label: "Haltères"  %>
-      <%= f.input :pull_up_bar, as: :boolean, label: "Barre de tractions"  %>
-      <%= f.input :abs_wheel, as: :boolean, label: "Roue à abdos"  %>
-      <%= f.input :jumping_rope, as: :boolean, label: "Corde à sauter"  %>
-      <%= f.input :chair, as: :boolean, label: "Chaise ou banc"  %>
-      <%= f.submit "Génerer une HIIT session", {class: "btn btn-primary"} %>
-    <% end %>
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        <h3>Choisis ton matériel ?</h3>
+        <%= f.input :trx, as: :boolean, label: "TRX"  %>
+        <%= f.input :weights, as: :boolean, label: "Haltères"  %>
+        <%= f.input :pull_up_bar, as: :boolean, label: "Barre de tractions"  %>
+        <%= f.input :abs_wheel, as: :boolean, label: "Roue à abdos"  %>
+        <%= f.input :jumping_rope, as: :boolean, label: "Corde à sauter"  %>
+        <%= f.input :chair, as: :boolean, label: "Chaise ou banc"  %>
+        <%= f.input :running_space, as: :boolean, label: "De l'espace pour courir (10-15m environ)"  %>
+        <%= f.input :rowing_machine, as: :boolean, label: 'Un rameur'  %>
+        <%= f.input :bike, as: :boolean, label: "Un velo d'appartement"  %>
+      </div>
+
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        <h3>Quel tabata veux-tu doubler ? </h3>
+        <%= f.input :doubled_tabata, collection: ['Force', 'Cardio', 'Abdos'], label: "Tabata doublé", selected: 'Force'  %>
+      </div>
+
+      <div class="col-xs-10 col-xs-offset-1 text-center">
+        <%= f.submit "Génerer une HIIT session", {class: "btn btn-primary"} %>
+      </div>
     </div>
-    <!-- <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-      <%#= link_to "Découvrir la liste des exercices", exercises_path, {class: "btn btn-default"} %> -->
-    <!-- </div> -->
-  </div>
+  <% end %>
 </div>
+
+<!-- <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+  <%#= link_to "Découvrir la liste des exercices", exercises_path, {class: "btn btn-default"} %> -->
+<!-- </div> -->
