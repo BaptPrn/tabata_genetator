@@ -27,8 +27,8 @@ class ExercisesAggregator
     exercises += Exercise.where(equipment: 'Chaise/banc') if @params[:chair]== "1"
     exercises += Exercise.where(equipment: 'Corde à sauter') if @params[:jumping_rope]== "1"
     exercises += Exercise.where(equipment: "De l'espace pour courir") if @params[:running_space]== "1"
-    exercises += Exercise.where(equipment: 'Rowing machine') if @params[:rowing_machine]== "1"
-    exercises += Exercise.where(equipment: 'Bike') if @params[:bike]== "1"
+    exercises += Exercise.where(equipment: 'Rameur') if @params[:rowing_machine]== "1"
+    exercises += Exercise.where(equipment: "Vélo d'appartement") if @params[:bike]== "1"
     exercises
   end
 
